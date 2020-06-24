@@ -17,16 +17,16 @@
 12. Rain water trapping
 13. The celebrity problem
 
-|-----------------------|
-|1st Loop_i 0 to N		  |
-|     2nd Loop 		      |	
-|_____________________  |
-||2nd Loop_j 0 to N		| |	
-||2nd Loop_j N to 0		| |
-||2nd Loop_j i to N		| |	
-||2nd Loop_j N to i		| |
-||___________________ | |
-|	O(n^2)		            |	
+|-------------------------|
+|1st Loop_i 0 to N	  |
+|     2nd Loop 		  |	
+|________________________ |
+||2nd Loop_j 0 to N	| |	
+||2nd Loop_j N to 0	| |
+||2nd Loop_j i to N	| |	
+||2nd Loop_j N to i	| |
+||______________________| |
+|	O(n^2)		|	
 -------------------------
 	 Stack 
 -------------------------
