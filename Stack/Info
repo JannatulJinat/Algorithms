@@ -1,7 +1,7 @@
-1. Nearest Greater to right
+1. Nearest Greater to right (Next Largest Element)
 2. Nearest Greater to left
-3. Nearest smaller to right
-4. Nearest smaller to left
+3. Nearest smaller to left  (Next smallest Element)
+4. Nearest smaller to right 
 
 5. Stock span problem
 6. Maximum Area of Histogram
