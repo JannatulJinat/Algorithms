@@ -1,7 +1,7 @@
 /*
 NGL = next greater to left
 stack -> left array
-Element        Output:NGE
+Element        Output:NGL
 1                   -1
 3                   -1
 2                   3
@@ -43,7 +43,7 @@ void using_stack(vector<int>element, int n)
     cout<<"Element: ";
     for(int value : element)
         cout<<value<<" ";
-    cout<<"\nNGE:\t ";
+    cout<<"\nNGL:\t ";
 
     for(int value : NGL)
         cout<<value<<" ";
