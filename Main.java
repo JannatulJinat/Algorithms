@@ -9,11 +9,11 @@
  * @author jinat
  */
 public class Main {
-    
+
     //static block
     //executes even before main method
     //output: static block 1 -> static block 2 -> main method 
-    static{
+    static {
         System.out.println("Hello from Static Block 1");
     }
 
@@ -64,11 +64,17 @@ public class Main {
         //static method
         //without creating obj, static method can be called
         Circle.print(); // output: "Hello from static method"
+
+        //static class
+        //only inner class can be static, outer class can't be static
+        // static inner class instantiated without instantiating its outer class
+        Circle.innerClassStatic innerClassObj1 = new Circle.innerClassStatic();
+        innerClassObj1.display();
     }
-    
+
     //static block
     //executes even before main method 
-    static{
+    static {
         System.out.println("Hello from Static Block 2");
     }
 
@@ -87,6 +93,15 @@ class Circle {
         int variableInsideStaticMethod = 5; // static method can access  variableInsideStaticMethod
         System.out.println("Hello from Static method");
 
+    }
+
+    public static class innerClassStatic {
+
+        //only inner class can be static, outer class can't be static
+        public void display() {
+            System.out.println("Hello from Static class[inner class]");
+
+        }
     }
 
 }
