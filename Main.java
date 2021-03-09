@@ -9,6 +9,13 @@
  * @author jinat
  */
 public class Main {
+    
+    //static block
+    //executes even before main method
+    //output: static block 1 -> static block 2 -> main method 
+    static{
+        System.out.println("Hello from Static Block 1");
+    }
 
     public static void main(String[] args) {
 
@@ -58,6 +65,13 @@ public class Main {
         //without creating obj, static method can be called
         Circle.print(); // output: "Hello from static method"
     }
+    
+    //static block
+    //executes even before main method 
+    static{
+        System.out.println("Hello from Static Block 2");
+    }
+
 }
 
 class Circle {
