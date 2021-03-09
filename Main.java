@@ -12,6 +12,16 @@ public class Main {
 
     public static void main(String[] args) {
 
+        // "==" operator , compares objects
+        Circle circleObj1 = new Circle();
+        Circle circleObj2 = new Circle();
+        Circle circleObj3;
+        circleObj1.radius = 5;
+        circleObj2.radius = 5;
+        System.out.println(circleObj1 == circleObj2); //false
+        circleObj3 = circleObj1;
+        System.out.println(circleObj1 == circleObj3); //true
+
         //String Pool
         String s1 = "UK"; //string literal
         String s2 = "UK";
@@ -32,4 +42,8 @@ public class Main {
         System.out.println(s4); //UK 
 
     }
+}
+class Circle {
+
+    public int radius;
 }
