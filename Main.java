@@ -29,6 +29,15 @@ public class Main {
         circleObj3 = circleObj1;
         System.out.println(circleObj1 == circleObj3); //true
 
+        //string
+        String string1 = "I" + "like" + "Java";
+        System.out.println(string1); // IlikeJava
+
+        System.out.println('j' + 'a' + 'v' + 'a');  //418
+        //character literals has been used instead of string literals
+        //an addition of each equivalent ASCII(Unicode) value of the character will be obtained.
+        //Hence the output is 106 + 97 + 118 + 97 = 418
+
         //String Pool
         String s1 = "UK"; //string literal
         String s2 = "UK";
