@@ -40,26 +40,40 @@ public class Main {
         System.out.println(s3); //UK 
 
         System.out.println(s4); //UK 
-        
-        
+
         //Static variable
         Circle circleObj4 = new Circle();
         Circle circleObj5 = new Circle();
-        
+
         circleObj4.colorOpacity = 10;
         System.out.println(circleObj4.colorOpacity); //10
         System.out.println(circleObj5.colorOpacity); //10
-        
+
         circleObj5.colorOpacity = 20;
 
         System.out.println(circleObj4.colorOpacity); //20
         System.out.println(circleObj5.colorOpacity); //20
-        
 
+        //static method
+        //without creating obj, static method can be called
+        Circle.print(); // output: "Hello from static method"
     }
 }
+
 class Circle {
 
     public int radius;
     public static int colorOpacity;
+    public static double pi = 3.1416;
+
+    //static method
+    public static void print() {
+        //radius = 5; // error
+        pi = 3.14159265; //static method can access  static variable
+        int variableInsideStaticMethod = 5; // static method can access  variableInsideStaticMethod
+        System.out.println("Hello from Static method");
+
+    }
+
 }
+
